@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/style.css" rel="stylesheet" type="text/css">
+    <title>{{ city_name }}</title>
+</head>
+<body>
+    <div id="element1">
+        <img src="{{ url_for('city_plot', city_id=city_id) }}" alt="Image">
+    </div>
+    <div id="element2">
+        <p>This graph shows mean daily temperature and average relative humidity in {{ city_name }}.</p>
+        <p> {{ city_climate }}</p>
+        <hr/>
+        <p><a href="/static">Back to the main page</a></p>
+    </div>
+</body>
+</html>
